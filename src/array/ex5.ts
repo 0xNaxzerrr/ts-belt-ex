@@ -1,6 +1,4 @@
-// // Exercice 5: Supprimer des produits selon des critèresUtilise Array.drop (pour retirer le premier produit de la liste).Utilise Array.dropExactly (pour retirer exactement deux produits depuis le début).Utilise Array.dropWhile (pour retirer les produits tant qu'ils sont en stock)
-import { A, pipe } from "@mobily/ts-belt";
-
+import { A } from "@mobily/ts-belt";
 import { Product } from "./type";
 
 const products: Product[] = [
@@ -9,4 +7,14 @@ const products: Product[] = [
   { name: "Keyboard", price: 75, inStock: true },
   { name: "Monitor", price: 200, inStock: true },
 ];
-export const ArrayFn5 = () => {};
+
+export const ArrayFn5 = () => {
+  const firstProductDeleted = A.drop(products, 1);
+  const twoFirstProductsDeleted = A.dropExactly(products, 2);
+  const productsOutOfStock = A.dropWhile(
+    products,
+    (product) => product.inStock
+  );
+
+  return [firstProductDeleted, twoFirstProductsDeleted, productsOutOfStock];
+};
