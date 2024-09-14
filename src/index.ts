@@ -37,6 +37,22 @@ import { optionFn5 } from "./option/ex5";
 import { optionFn6 } from "./option/ex6";
 import { optionFn7 } from "./option/ex7";
 
+import { functionFn1 } from "./function/ex1";
+import { functionFn2 } from "./function/ex2";
+import { functionFn3 } from "./function/ex3";
+import { functionFn4 } from "./function/ex4";
+import { functionFn5 } from "./function/ex5";
+import { functionFn6 } from "./function/ex6";
+import { functionFn7 } from "./function/ex7";
+
+import { DictFn1 } from "./dict/ex1";
+import { DictFn2 } from "./dict/ex2";
+import { DictFn3 } from "./dict/ex3";
+import { DictFn4 } from "./dict/ex4";
+import { DictFn5 } from "./dict/ex5";
+import { DictFn6 } from "./dict/ex6";
+import { DictFn7 } from "./dict/ex7";
+
 function main() {
   // ARRAY
   // const ex1 = ArrayFn1();
@@ -71,13 +87,31 @@ function main() {
   // const resultEx7 = resultFn7();
 
   // OPTION
-  const optionEx1 = optionFn1();
-  const optionEx2 = optionFn2();
-  const optionEx3 = optionFn3();
-  const optionEx4 = optionFn4();
-  const optionEx5 = optionFn5();
-  const optionEx6 = optionFn6();
-  const optionEx7 = optionFn7();
+  // const optionEx1 = optionFn1();
+  // const optionEx2 = optionFn2();
+  // const optionEx3 = optionFn3();
+  // const optionEx4 = optionFn4();
+  // const optionEx5 = optionFn5();
+  // const optionEx6 = optionFn6();
+  // const optionEx7 = optionFn7();
+
+  // FUNCTION
+  // const functionEx1 = functionFn1();
+  // const functionEx2 = functionFn2();
+  // const functionEx3 = functionFn3();
+  // const functionEx4 = functionFn4();
+  // const functionEx5 = functionFn5();
+  // const functionEx6 = functionFn6();
+  // const functionEx7 = functionFn7();
+
+  // DICT
+  const DictEx1 = DictFn1();
+  const DictEx2 = DictFn2();
+  const DictEx3 = DictFn3();
+  const DictEx4 = DictFn4();
+  const DictEx5 = DictFn5();
+  const DictEx6 = DictFn6();
+  const DictEx7 = DictFn7();
 }
 
 main();
