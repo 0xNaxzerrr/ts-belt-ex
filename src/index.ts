@@ -55,63 +55,86 @@ import { DictFn7 } from "./dict/ex7";
 
 function main() {
   // ARRAY
-  // const ex1 = ArrayFn1();
-  // const ex2 = ArrayFn2();
-  // const ex3 = ArrayFn3();
-  // const ex4 = ArrayFn4();
-  // const ex5 = ArrayFn5();
-  // const ex6 = ArrayFn6();
-  // const ex7 = ArrayFn7();
-  // const ex8 = ArrayFn8();
-  // const ex9 = ArrayFn9();
-  // const ex10 = ArrayFn10();
-  // const ex30 = ArrayFn30();
-  // const ex29 = ArrayFn29();
-  // const ex28 = ArrayFn28();
-  // const ex27 = ArrayFn27();
-  // const ex26 = ArrayFn26();
-  // const ex25 = ArrayFn25();
-  // const ex24 = ArrayFn24();
-  // const ex23 = ArrayFn23();
-  // const ex22 = ArrayFn22();
-  // const ex21 = ArrayFn21();
-  // const ex20 = ArrayFn20();
+  const executeAndLog = (fnArray: Array<() => any>, label: string) => {
+    console.log(`--- ${label} ---`);
+    fnArray.forEach((fn, index) => {
+      const result = fn();
+      console.log(`${label} ${index + 1}:`, result);
+    });
+  };
+
+  // ARRAY Functions
+  const arrayFns = [
+    ArrayFn1,
+    ArrayFn2,
+    ArrayFn3,
+    ArrayFn4,
+    ArrayFn5,
+    ArrayFn6,
+    ArrayFn7,
+    ArrayFn8,
+    ArrayFn9,
+    ArrayFn10,
+    ArrayFn20,
+    ArrayFn21,
+    ArrayFn22,
+    ArrayFn23,
+    ArrayFn24,
+    ArrayFn25,
+    ArrayFn26,
+    ArrayFn27,
+    ArrayFn28,
+    ArrayFn29,
+    ArrayFn30,
+  ];
+  executeAndLog(arrayFns, "ArrayFn");
 
   // RESULT
-  // const resultEx1 = resultFn1();
-  // const resultEx2 = resultFn2();
-  // const resultEx3 = resultFn3();
-  // const resultEx4 = resultFn4();
-  // const resultEx5 = resultFn5();
-  // const resultEx6 = resultFn6();
-  // const resultEx7 = resultFn7();
+  const resultFns = [
+    resultFn1,
+    resultFn2,
+    resultFn3,
+    resultFn4,
+    resultFn5,
+    resultFn6,
+    resultFn7,
+  ];
+  executeAndLog(resultFns, "ResultFn");
 
   // OPTION
-  // const optionEx1 = optionFn1();
-  // const optionEx2 = optionFn2();
-  // const optionEx3 = optionFn3();
-  // const optionEx4 = optionFn4();
-  // const optionEx5 = optionFn5();
-  // const optionEx6 = optionFn6();
-  // const optionEx7 = optionFn7();
+  const optionFns = [
+    optionFn1,
+    optionFn2,
+    optionFn3,
+    optionFn4,
+    optionFn5,
+    optionFn6,
+    optionFn7,
+  ];
+  executeAndLog(optionFns, "OptionFn");
 
   // FUNCTION
-  const functionEx1 = functionFn1();
-  const functionEx2 = functionFn2();
-  const functionEx3 = functionFn3();
-  const functionEx4 = functionFn4();
-  const functionEx5 = functionFn5();
-  const functionEx6 = functionFn6();
-  const functionEx7 = functionFn7();
+  const functionFns = [
+    functionFn1,
+    functionFn2,
+    functionFn3,
+    functionFn4,
+    functionFn5,
+    functionFn6,
+    functionFn7,
+  ];
+  executeAndLog(functionFns, "FunctionFn");
 
   // DICT
-  // const DictEx1 = DictFn1();
-  // const DictEx2 = DictFn2();
-  // const DictEx3 = DictFn3();
-  // const DictEx4 = DictFn4();
-  // const DictEx5 = DictFn5();
-  // const DictEx6 = DictFn6();
-  // const DictEx7 = DictFn7();
+  const dictFns = [
+    DictFn1,
+    DictFn2,
+    DictFn3,
+    DictFn4,
+    DictFn5,
+    DictFn6,
+    DictFn7,
+  ];
+  executeAndLog(dictFns, "DictFn");
 }
-
 main();
