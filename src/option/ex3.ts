@@ -2,4 +2,26 @@
 
 // const value1 = 100;
 // const value2 = 50;
-export const optionFn3 = () => {};
+import { O } from "@mobily/ts-belt";
+
+export const optionFn3 = () => {
+  const value1 = 100;
+  const value2 = 50;
+
+  const option1 = O.fromNullable(value1);
+  const option2 = O.fromNullable(value2);
+
+  const combinedOption = O.zipWith(
+    option1,
+    option2,
+    (val1, val2) => val1 + val2
+  );
+
+  const finalResult = O.map(combinedOption, (sum) => `La somme est : ${sum}`);
+
+  const finalValue = O.getWithDefault(finalResult, "Valeurs manquantes");
+
+  console.log("Valeur finale :", finalValue);
+};
+
+optionFn3();

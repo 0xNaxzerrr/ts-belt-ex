@@ -29,6 +29,14 @@ import { resultFn5 } from "./result/ex5";
 import { resultFn6 } from "./result/ex6";
 import { resultFn7 } from "./result/ex7";
 
+import { optionFn1 } from "./option/ex1";
+import { optionFn2 } from "./option/ex2";
+import { optionFn3 } from "./option/ex3";
+import { optionFn4 } from "./option/ex4";
+import { optionFn5 } from "./option/ex5";
+import { optionFn6 } from "./option/ex6";
+import { optionFn7 } from "./option/ex7";
+
 function main() {
   // ARRAY
   // const ex1 = ArrayFn1();
@@ -54,13 +62,22 @@ function main() {
   // const ex20 = ArrayFn20();
 
   // RESULT
-  const resultEx1 = resultFn1();
-  const resultEx2 = resultFn2();
-  const resultEx3 = resultFn3();
-  const resultEx4 = resultFn4();
-  const resultEx5 = resultFn5();
-  const resultEx6 = resultFn6();
-  const resultEx7 = resultFn7();
+  // const resultEx1 = resultFn1();
+  // const resultEx2 = resultFn2();
+  // const resultEx3 = resultFn3();
+  // const resultEx4 = resultFn4();
+  // const resultEx5 = resultFn5();
+  // const resultEx6 = resultFn6();
+  // const resultEx7 = resultFn7();
+
+  // OPTION
+  const optionEx1 = optionFn1();
+  const optionEx2 = optionFn2();
+  const optionEx3 = optionFn3();
+  const optionEx4 = optionFn4();
+  const optionEx5 = optionFn5();
+  const optionEx6 = optionFn6();
+  const optionEx7 = optionFn7();
 }
 
 main();
