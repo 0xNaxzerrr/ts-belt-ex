@@ -4,4 +4,21 @@
 //   (n: number) => n > 10,
 //   (n: number) => n % 2 === 0,
 // ];
-export const functionFn2 = () => {};
+import { F } from "@mobily/ts-belt";
+
+export const functionFn2 = () => {
+  const number = 12;
+
+  const predicates = [(n: number) => n > 10, (n: number) => n % 2 === 0];
+
+  const allPredicates = F.allPass(predicates);
+
+  const logValid = F.tap<number>((n) => {
+    console.log("valid");
+  });
+
+  const checkNumber = F.when<number, number>(allPredicates, logValid);
+
+  const result = checkNumber(number);
+  console.log("result:", result);
+};

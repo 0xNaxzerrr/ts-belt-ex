@@ -96,22 +96,22 @@ function main() {
   // const optionEx7 = optionFn7();
 
   // FUNCTION
-  // const functionEx1 = functionFn1();
-  // const functionEx2 = functionFn2();
-  // const functionEx3 = functionFn3();
-  // const functionEx4 = functionFn4();
-  // const functionEx5 = functionFn5();
-  // const functionEx6 = functionFn6();
-  // const functionEx7 = functionFn7();
+  const functionEx1 = functionFn1();
+  const functionEx2 = functionFn2();
+  const functionEx3 = functionFn3();
+  const functionEx4 = functionFn4();
+  const functionEx5 = functionFn5();
+  const functionEx6 = functionFn6();
+  const functionEx7 = functionFn7();
 
   // DICT
-  const DictEx1 = DictFn1();
-  const DictEx2 = DictFn2();
-  const DictEx3 = DictFn3();
-  const DictEx4 = DictFn4();
-  const DictEx5 = DictFn5();
-  const DictEx6 = DictFn6();
-  const DictEx7 = DictFn7();
+  // const DictEx1 = DictFn1();
+  // const DictEx2 = DictFn2();
+  // const DictEx3 = DictFn3();
+  // const DictEx4 = DictFn4();
+  // const DictEx5 = DictFn5();
+  // const DictEx6 = DictFn6();
+  // const DictEx7 = DictFn7();
 }
 
 main();
