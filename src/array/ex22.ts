@@ -2,10 +2,34 @@
 
 // // make the new type of a product
 
-// const products = [
-//   { name: 'Laptop', price: 1000, category: 'Electronics', quantity: 2 },
-//   { name: 'Mouse', price: 25, category: 'Accessories', quantity: 5 },
-//   { name: 'Monitor', price: 200, category: 'Electronics', quantity: 1 },
-//   { name: 'Keyboard', price: 75, category: 'Accessories', quantity: 3 },
-// ];
-export const ArrayFn22 = () => {};
+import { A } from "@mobily/ts-belt";
+
+type Product = {
+  name: string;
+  price: number;
+  category: string;
+  quantity: number;
+};
+
+const products: Product[] = [
+  { name: "Laptop", price: 1000, category: "Electronics", quantity: 2 },
+  { name: "Mouse", price: 25, category: "Accessories", quantity: 5 },
+  { name: "Monitor", price: 200, category: "Electronics", quantity: 1 },
+  { name: "Keyboard", price: 75, category: "Accessories", quantity: 3 },
+];
+
+export const ArrayFn22 = () => {
+  const quantitiesByCategory = A.reduce(
+    products,
+    {} as Record<string, number>,
+    (acc, product) => {
+      const { category, quantity } = product;
+      if (!acc[category]) {
+        acc[category] = 0;
+      }
+      acc[category] += quantity;
+      return acc;
+    }
+  );
+  console.log(quantitiesByCategory);
+};
